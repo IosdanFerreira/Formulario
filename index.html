@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <header class="title">
+        <span class="titleTxt">Fazer Cadastro</span>
+    </header>
+    <form class="formulario">
+        <span class="nameTxt">Nome</span>
+        <input type="text" name="name" class="name" id="name">
+        <div class="inputFeedback">Preencha esse campo</div>
+
+        <span class="surnameTxt">Sobrenome</span>
+        <input type="text" name="surname" class="surname" id="surname">
+        <div class="inputFeedback">Preencha esse campo</div>
+
+        <span class="emailTxt">Email</span>
+        <input type="text" name="email" class="email" id="email">
+        <div class="inputFeedback">Preencha esse campo</div>
+
+        <span class="password">Senha</span>
+        <input type="password" name="password" class="password" id="password">
+        <div class="inputFeedback">Preencha esse campo</div>
+
+        <span class="confPassword">Confirmar Senha</span>
+        <input type="password" name="confPassword" class="confPassword" id="confPassword">
+        <div class="confPassword-Feedback">As duas senhas devem ser iguais</div>
+
+        <button class="btnCadastro" id="btnCadastro" onclick="cadastrar()">Cadastrar</button>
+    </form>
+    
+    <script src="js/control.js"></script>
+</body>
+</html>
