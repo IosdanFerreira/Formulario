@@ -1,0 +1,57 @@
+@media (max-width: 912px){
+    .title{
+        width: 70vw;
+        margin-top: 15vh;
+    }
+    .formulario{
+        width: 70vw;
+        height: 56vh;
+    }
+    .formTxt{
+        padding-left: 3.8vw;
+    }
+    .error{
+        padding-left: 3.3vw;
+    }
+}
+
+@media (max-width: 820px){
+    .title{
+        width: 70vw;
+        margin-top: 15vh;
+    }
+    .formulario{
+        width: 70vw;
+        height: 56vh;
+    }
+    .formTxt{
+        padding-left: 3.8vw;
+    }
+}
+
+@media (max-width: 768px){
+    .title{
+        margin-top: 11vh;
+    }
+    .formulario{
+        height: 67vh;
+    }
+}
+
+@media (max-width: 414px){
+    .title{
+        width: 90vw;
+
+    }
+    .formulario{
+        width: 90vw;
+    }
+    .btnCadastro{
+        margin: 2vh auto;
+        width: 45%;
+        height: 10%;
+    }
+    .error{
+        padding-left: 4.3vw;
+    }
+}

@@ -5,35 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaQ.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
     <title>Formulário</title>
 </head>
 <body>
+    <!--Título do formulário-->
     <header class="title">
         <span class="titleTxt">Fazer Cadastro</span>
     </header>
+    <!--Campos de inputs-->
     <form class="formulario">
-        <span class="nameTxt">Nome</span>
-        <input type="text" name="name" class="name" id="name">
-        <div class="inputFeedback">Preencha esse campo</div>
+        <span class="formTxt">Nome</span>
+        <input type="text" name="name" class="inputTxt" id="name" placeholder="Insira seu nome">
+        <div class="inputFeedback error" id="nameError"> <i class="mdi mdi-alert-circle"></i> Preencha esse campo</div>
 
-        <span class="surnameTxt">Sobrenome</span>
-        <input type="text" name="surname" class="surname" id="surname">
-        <div class="inputFeedback">Preencha esse campo</div>
+        <span class="formTxt">Sobrenome</span>
+        <input type="text" name="surname" class="inputTxt" id="surname" placeholder="Insira seu sobrenome">
+        <div class="inputFeedback error" id="surnameError"><i class="mdi mdi-alert-circle"></i> Preencha esse campo</div>
 
-        <span class="emailTxt">Email</span>
-        <input type="text" name="email" class="email" id="email">
-        <div class="inputFeedback">Preencha esse campo</div>
+        <span class="formTxt">Email</span>
+        <input type="text" name="email" class="inputTxt" id="email" placeholder="Insira seu email">
+        <div class="inputFeedback error" id="emailError"><i class="mdi mdi-alert-circle"></i> Preencha esse campo</div>
 
-        <span class="password">Senha</span>
-        <input type="password" name="password" class="password" id="password">
-        <div class="inputFeedback">Preencha esse campo</div>
+        <span class="formTxt">Senha</span>
+        <input type="password" name="password" class="password inputTxt" id="password" placeholder="Crie uma senha">
+        <div class="inputFeedback error" id="passwordError"><i class="mdi mdi-alert-circle"></i> Preencha esse campo</div>
 
-        <span class="confPassword">Confirmar Senha</span>
-        <input type="password" name="confPassword" class="confPassword" id="confPassword">
-        <div class="confPassword-Feedback">As duas senhas devem ser iguais</div>
+        <span class="formTxt">Confirmar Senha</span>
+        <input type="password" name="confPassword" class="confPassword inputTxt" id="confPassword" placeholder="Confirme sua senha">
+        <div class="confPassword-Feedback error" id="confPasswordError"><i class="mdi mdi-alert-circle"></i> As duas senhas devem ser iguais</div>
 
-        <button class="btnCadastro" id="btnCadastro" onclick="cadastrar()">Cadastrar</button>
+        <!--Botão-->
+        <button type="button" class="btnCadastro" id="btnCadastro" onclick="cadastrar()">Cadastrar-se</button>
     </form>
     
     <script src="js/control.js"></script>

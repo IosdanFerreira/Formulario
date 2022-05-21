@@ -10,7 +10,7 @@ body{
 }
 .title{
     width: 45vw;
-    height: 8vh;
+    height: 10vh;
     background-color: white;
     margin: 11vh auto 0 auto;
     display: flex;
@@ -21,16 +21,67 @@ body{
 }
 .titleTxt{
     text-align: center;
-    font-size: 18pt;
+    font-size: 20pt;
     font-weight: bold;
+    padding-top: 3vh;
+    color: #1c57c4;
 }
 .formulario{
     display: flex;
     flex-direction: column;
-    
-    background-color: red;
+    background-color: white;
     width: 45vw;
     height:75vh;
     margin: 0 auto;
-
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.formTxt{
+    padding: 3.5vh 0 0 2.3vw;
+    font-weight: bold;
+    color: #1c57c4c9;
+}
+.inputTxt{
+    width: 90%;
+    height: 35px;
+    margin: 0 auto;
+    outline: none;
+    border-radius: 6px;
+    border: 0px;
+    background-color: rgba(172, 172, 172, 0.315);
+    padding-left: 0.5vw;
+    font-size: 12pt;
+}
+.inputFeedback{
+    display: none;
+    padding-left: 2.3vw;
+    font-size: 9pt;
+    color: red;
+}
+.error{
+    padding-left: 2.3vw;
+    font-size: 9pt;
+    color: red;
+}
+.confPassword-Feedback{
+    display: none;
+    padding-left: 2.3vw;
+    font-size: 9pt;
+    color: red;
+}
+.btnCadastro{
+    width: 35%;
+    height: 10%;
+    margin: 5vh auto;
+    border-radius: 7px;
+    border:none;
+    background-color: #1c57c4;
+    color: white;
+    font-size: 15pt;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btnCadastro:hover{
+    background-color: #0d3e99;
+    transform: scale(1.05);
 }
