@@ -1,6 +1,11 @@
+const form = document.querySelector('.formulario')
 
+form.addEventListener('submit' , (e) =>{
+    e.preventDefault()
+})
 
-function cadastrar(){
+function cadastrar(register){
+
     //Input
     let name = document.getElementById('name');
     //Div nameError
@@ -31,7 +36,6 @@ function cadastrar(){
     //Email
     let email = document.getElementById('email');
     let emailError = document.getElementById('emailError')
-    let classEmail = email.getAttribute('class')
 
     if(email.value == ""){
         emailError.classList.remove("inputFeedback");
@@ -41,10 +45,22 @@ function cadastrar(){
         emailError.classList.add("inputFeedback");
     }
 
+    //Validação de emai
+    if(email.value.indexOf("@") < 0){
+
+        emailError.classList.remove("inputFeedback");
+        emailError.classList.add("error")
+    }else{
+        emailError.classList.remove('error')
+        emailError.classList.add("inputFeedback");
+    }
+    
+
+
+
     //Password
     let password = document.getElementById('password');
     let passwordError = document.getElementById('passwordError')
-    let classpassword = password.getAttribute('class')
 
     if(password.value == ""){
         passwordError.classList.remove("inputFeedback");

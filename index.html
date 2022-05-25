@@ -18,26 +18,26 @@
     <form class="formulario">
         <span class="formTxt">Nome</span>
         <input type="text" name="name" class="inputTxt" id="name" placeholder="Insira seu nome">
-        <div class="inputFeedback error" id="nameError"> <i class="mdi mdi-alert-circle"></i> Preencha esse campo</div>
+        <div class="inputFeedback error" id="nameError"> <i class="mdi mdi-alert-circle"></i> Campo Obrigatório</div>
 
         <span class="formTxt">Sobrenome</span>
         <input type="text" name="surname" class="inputTxt" id="surname" placeholder="Insira seu sobrenome">
-        <div class="inputFeedback error" id="surnameError"><i class="mdi mdi-alert-circle"></i> Preencha esse campo</div>
+        <div class="inputFeedback error" id="surnameError"><i class="mdi mdi-alert-circle"></i> Campo Obrigatório</div>
 
         <span class="formTxt">Email</span>
         <input type="text" name="email" class="inputTxt" id="email" placeholder="Insira seu email">
-        <div class="inputFeedback error" id="emailError"><i class="mdi mdi-alert-circle"></i> Preencha esse campo</div>
+        <div class="inputFeedback error" id="emailError"><i class="mdi mdi-alert-circle"></i> Email inválido</div>
 
         <span class="formTxt">Senha</span>
         <input type="password" name="password" class="password inputTxt" id="password" placeholder="Crie uma senha">
-        <div class="inputFeedback error" id="passwordError"><i class="mdi mdi-alert-circle"></i> Preencha esse campo</div>
+        <div class="inputFeedback error" id="passwordError"><i class="mdi mdi-alert-circle"></i> Campo Obrigatório</div>
 
         <span class="formTxt">Confirmar Senha</span>
         <input type="password" name="confPassword" class="confPassword inputTxt" id="confPassword" placeholder="Confirme sua senha">
         <div class="confPassword-Feedback error" id="confPasswordError"><i class="mdi mdi-alert-circle"></i> As duas senhas devem ser iguais</div>
 
         <!--Botão-->
-        <button type="button" class="btnCadastro" id="btnCadastro" onclick="cadastrar()">Cadastrar-se</button>
+        <button type="submit" class="btnCadastro" id="btnCadastro" onclick="cadastrar()">Cadastrar-se</button>
     </form>
     
     <script src="js/control.js"></script>
